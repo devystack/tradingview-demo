@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES6", "ESNext", "DOM"],
+    "module": "ES6",
+    "jsx": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": false,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "outDir": "dist",
+    "paths": {
+      "react-tradingview-embed": ["./dist"],
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "storybook",
+    "stories",
+    "**/*.stories.tsx",
+  ],
+  "files": ["./src/index.ts"]
+}
